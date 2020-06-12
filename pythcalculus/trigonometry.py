@@ -15,8 +15,15 @@ For example: f=3*sin^2(x)cos^3(x)+4*sin^4(x)cos^2(x)
              parameter for this function would be
              [[3,2,3],[4,4,2]]
 """
+e = 2.718281828459045
+pi = 3.141592653589793
+def sin(X):
+    global e
+    return((e**(X*1j)).imag)
 
-import math
+def cos(X):
+    global e
+    return((e**(X*1j)).real)
 
 def _differentiate(f):
     
@@ -62,7 +69,7 @@ def differentiate(f=[[],[]]):
     return result
     
 
-def derivative_at_p(f=[[],[]],p=math.pi/2):
+def derivative_at_p(f=[[],[]],p=pi/2):
     """
     
     Derivative of a function at x=p
@@ -77,7 +84,7 @@ def derivative_at_p(f=[[],[]],p=math.pi/2):
     p : TYPE->float
         DESCRIPTION->The point x=p at which the value of derivative
         is to be found out. 
-        The default is math.pi/2.
+        The default is pi/2.
 
     Returns
     -------
@@ -87,14 +94,14 @@ def derivative_at_p(f=[[],[]],p=math.pi/2):
     Example:
         
     >>from calculus.trigonometry import derivative_at_p
-    >>derivative_at_p(f=[[3,2,3],[4,4,2]],p=math.pi/2)
+    >>derivative_at_p(f=[[3,2,3],[4,4,2]],p=pi/2)
     5.0
 
     """
     result=0
     f_derivative=differentiate(f)
     for i in f_derivative:
-        result+=i[0]*(math.sin(p)**i[1])*(math.cos(p)**i[2])
+        result+=i[0]*(sin(p)**i[1])*(cos(p)**i[2])
     return round(result)
     
     
