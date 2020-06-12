@@ -10,9 +10,7 @@ setup(
   url = 'https://github.com/vaish1999/Calculus-in-python',  
   download_url = 'https://github.com/vaish1999/Calculus-in-python/archive/v1.1.tar.gz',   
   keywords = ['calculus', 'python', 'differentiate','integrate','derivative'],   
-  install_requires=[           
-          'math',
-      ],
+  install_requires=[],
   classifiers=[
     'Development Status :: 3 - Alpha',     
     'Intended Audience :: Developers',     
