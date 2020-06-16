@@ -1,6 +1,8 @@
 # Calculus-in-python
 Just differentiate and integrate!
 
+[![Downloads](https://pepy.tech/badge/pythcalculus)](https://pepy.tech/project/pythcalculus)
+
 In this project, you will have one common parameter ie: 'f', which certainly means a function f(x).
 In the polynomial part, f acts as a list of coefficients of decreasing powers of x in the function f(x). 
 In the trigonometry part, f acts as a list of lists of coefficient, power of sine function and power of cosine function.
