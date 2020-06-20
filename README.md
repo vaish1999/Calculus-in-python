@@ -8,7 +8,7 @@ In the polynomial part, f acts as a list of coefficients of decreasing powers of
 In the trigonometry part, f acts as a list of lists of coefficient, power of sine function and power of cosine function.
 
 
-Example 1: Differentiate f(x) = 5x <sup>3</sup> + 3x <sup>2</sup> + 4x + 1
+Example 1:  Differentiate f(x) = 5x <sup>3</sup> + 3x <sup>2</sup> + 4x + 1
 
 ```python
 from calculus.polynomial import differentiate
@@ -22,7 +22,7 @@ Output-
 [15,6,4]
 ```
 
-Example 2:
+Example 2: Integrate f(x) = 5x <sup>3</sup> + 3x <sup>2</sup> + 4x + 1
 
 ```python
 from calculus.polynomial import integrate
@@ -36,7 +36,7 @@ Output-
 [1.25, 1.0, 2.0, 1.0, 0]
 ```
 
-Example 3:
+Example 3: Differentiate f(x) = 3sin<sup>2</sup>xcos<sup>3</sup>x + 4sin<sup>4</sup>xcos<sup>2</sup>x
 
 ```python
 from calculus.trigonometry import differentiate
@@ -50,7 +50,7 @@ Output-
 [[6, 1, 4], [-9, 3, 2], [16, 3, 3], [-8, 5, 1]]
 ```
 
-Example 4:
+Example 4: Differentiate f(x) = 3sin<sup>2</sup>xcos<sup>3</sup>x + 4sin<sup>4</sup>xcos<sup>2</sup>x at x = 𝝿/2
 
 ```python
 from calculus.trigonometry import derivative_at_p
@@ -63,4 +63,5 @@ Output-
 ```python
 0
 ```
+
 
